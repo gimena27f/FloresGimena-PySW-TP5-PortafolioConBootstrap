@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    font-family:'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+li{
+    list-style: none;
+}
+nav.navbar {
+    background-color:rgb(48, 73, 120);
+    z-index: 100;
+}
+.nav-link{
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.908) !important;
+    margin-left: 10px;
+}
+.nav-link:hover {
+
+    background-color: rgba(255, 255, 255, 0.447);
+    border-radius: 10px;
+    padding-left: 10px;
+
+}
+.navbar-toggler {
+    color: white !important;
+    border: none;
+
+
+}
+.icon {
+ text-decoration: none;
+}
+.container a{
+text-decoration: none;
+}
+p.logo{
+    font-family: Tangerine;
+    color: white;
+    font-size: 36px;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-style: italic;
+ 
+}
+p.logo:hover {
+    font-size: 38px;
+    text-shadow:0 0 5px rgba(0, 178, 255, 1),
+    0 0 10px rgba(0, 178, 255, 1),
+    0 0 20px rgba(0, 178, 255, 1),
+    0 0 40px rgba(38, 104, 127, 1),
+    0 0 80px rgba(38, 104, 127, 1),
+    0 0 90px rgba(38, 104, 127, 1),
+    0 0 100px rgba(38, 104, 127, 1),
+    0 0 140px rgba(38, 104, 127, 1),
+    0 0 180px rgba(38, 104, 127, 1) ;
+    cursor: pointer;
+}
+#jumbotron {
+    width: 100%;
+    height: 100vh !important;
+}
+#jumbotron .container {
+    height: 100% !important;
+}
+#jumbotron h6 {
+    letter-spacing: 2px;
+}
+
+#jumbotron .sosmed a {
+width: 2rem;
+height: 2rem;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.btn-color {
+    border-color:  rgb(48, 73, 120) !important;
+    background-color: rgb(48, 73, 120) !important;
+}
+.btn-color:hover {
+    background-color: rgb(101, 132, 187) !important;
+    border-color: rgb(101, 132, 187) !important;
+}
+
+.sobre-mi {
+    background-color:rgb(191, 207, 235);
+    padding: 10px;
+    border-radius: 10px;
+}
+.text-justify {
+    text-align: justify;
+  }
+/*Mis trabajos*/
+#works {
+    background-color:rgb(48, 73, 120);
+    width: 100%;
+}
+
+
+.work-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.work-item img {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.work-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(70%);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.work-item:hover .overlay {
+    opacity: 1;
+}
+
+/*Habilidades*/
+#skills {
+    width: 100%;
+
+}
+#skills .col-md i{
+    font-size: 8rem !important;
+}
+#skills .col-md .shadow {
+   text-align: center;
+   transition: transform .5s; 
+}
+#skills .col-md .shadow:hover {
+    transform:translateY(-.5rem); 
+ }
+ .icono {
+    width: 100px;
+    height: 130px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+ /*Certificates*/
+ #certificates {
+    background:rgb(48, 73, 120) ;
+    width: 100%;
+ }
+ .carousel-item::before {
+    contain: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: gainsboro;
+ }
+ /*contacto*/
+
+#contacto form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 77%;
+    margin: auto;
+}
+input[type= "text"],
+input[type= "email"] {
+    width: 49%;
+    margin-bottom: 15px;
+    padding: 18px 0;
+    border: 0;
+    border-bottom: 1px solid rgb(0, 128, 225);
+    font-size: 17px;
+}
+textarea {
+    padding: 18px 0;
+    border: 0;
+    border-bottom: 1px solid rgb(0, 128, 225) ;
+    font-size: 17px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+#contacto input[type= "submit"]{
+    width: 166px;
+    margin: auto;
+}
+/*footer*/
+footer {
+    width: 100%;
+    background-color: rgb(48, 73, 120);
+}
